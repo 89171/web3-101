@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (如果之后用静态站点生成器)
+node_modules/
+dist/
+.cache/
+
+# 草稿
+drafts/
+*.draft.md
