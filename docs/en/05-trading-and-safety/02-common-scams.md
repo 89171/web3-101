@@ -159,6 +159,232 @@ Defense:
 3. Use a dedicated browser profile for wallet activity.
 4. Install wallet apps only from official app stores or official links.
 
+## Mini Case Studies
+
+The examples below are fictionalized, but each one is based on common scam patterns that happen repeatedly in Web3.
+
+### Case 1: The "Free Airdrop" That Was a `permit`
+
+Alice sees a post saying a popular protocol is giving early users a token airdrop. The website looks professional and asks her to "sign to verify eligibility." The wallet popup does not show a gas fee, so she assumes it is safe.
+
+What actually happened: the signature was a `permit` approval that allowed the attacker to spend her USDC. A bot submitted the signed approval on-chain and drained her stablecoins.
+
+Warning signs:
+
+- The link came from a comment, DM, or repost instead of the project's official site.
+- The wallet showed an approval-like message, spender address, or unreadable data.
+- The site created urgency: "claim ends in 30 minutes."
+
+Better response: close the page, go to the project's official website from a bookmark or verified profile, and compare the claim flow before signing anything.
+
+### Case 2: The Address That Looked Familiar
+
+Ben often sends USDT to the same exchange deposit address. One day, he copies an address from his wallet history because it has the same first and last characters. He sends a large amount and later realizes the middle characters are different.
+
+What actually happened: an attacker had sent Ben a tiny transfer from a lookalike address. That poisoned his transaction history.
+
+Warning signs:
+
+- The address was copied from recent activity, not an address book.
+- Only the first and last 4 characters were checked.
+- No small test transfer was sent.
+
+Better response: save trusted addresses in an address book, check more characters, and send a small test transfer before large transfers.
+
+### Case 3: The "Support Agent" After a Public Question
+
+Clara posts in a Discord channel: "My transaction is stuck. Can someone help?" Within minutes, an account with the same avatar as a moderator DMs her and sends a "support portal."
+
+What actually happened: the portal asked her to connect a wallet and enter a seed phrase for "synchronization." The attacker imported the wallet and moved the assets.
+
+Warning signs:
+
+- Support contacted her first by DM.
+- The site asked for a seed phrase or private key.
+- The helper pressured her to act quickly.
+
+Better response: never trust support DMs. Use only official support channels, and never type a seed phrase into a website.
+
+### Case 4: The Fake Exchange Withdrawal Fee
+
+Daniel meets someone online who introduces him to a trading platform. The dashboard shows large profits. When he tries to withdraw, the platform asks for a "tax payment," then a "risk deposit," then an "account unlock fee."
+
+What actually happened: the exchange was fake. The displayed profits were just numbers in a scam database. Every extra payment was another theft.
+
+Warning signs:
+
+- A stranger introduced the platform.
+- Profits looked unusually smooth and high.
+- Withdrawal required new deposits before release.
+
+Better response: stop sending money. Preserve evidence and report the platform. Do not pay additional "unlock" fees.
+
+### Case 5: The Token You Can Buy but Cannot Sell
+
+Emma finds a new meme coin trending on social media. The price chart is going up fast. She buys in, sees her balance increase, and tries to sell, but every sell transaction fails.
+
+What actually happened: the contract was a honeypot. It allowed buys but blocked sells for normal users, while the creator could sell or drain liquidity.
+
+Warning signs:
+
+- The token was very new and promoted heavily by influencers.
+- The contract was not verified or had strange transfer restrictions.
+- There was little real liquidity and no trustworthy documentation.
+
+Better response: avoid new tokens unless you can read the contract or trust independent analysis. Use only money you can lose completely.
+
+### Case 6: The "Official" Hardware Wallet With a Printed Seed
+
+Frank buys a discounted hardware wallet from a marketplace. Inside the box is a card with 24 words already printed. The instructions say the wallet is "preconfigured for security." He deposits assets, and they disappear later.
+
+What actually happened: the attacker already knew the printed seed phrase. The hardware wallet was just bait.
+
+Warning signs:
+
+- The device came from an unofficial seller.
+- The seed phrase was pre-written or printed.
+- Setup did not require generating a fresh seed on the device.
+
+Better response: buy hardware wallets from official or authorized channels only. Generate the seed yourself during setup.
+
+### Case 7: The Malicious "Portfolio Tracker"
+
+Grace installs a browser extension that claims to show all wallet balances across chains. It has few reviews but looks useful. Later, wallet popups start appearing on unrelated sites, and one signature drains her NFTs.
+
+What actually happened: the extension injected malicious scripts into pages and manipulated wallet interactions.
+
+Warning signs:
+
+- The extension had few users, unclear developers, or broad permissions.
+- Wallet prompts appeared when no Web3 action was expected.
+- The same browser profile was used for normal browsing and wallet activity.
+
+Better response: keep wallet browsers clean, install very few extensions, and use a separate browser profile for Web3.
+
+### Case 8: The Wrong Network Withdrawal
+
+Helen wants to send USDT to a friend's exchange account. She chooses a cheaper network because the fee is lower, but the friend's exchange only supports deposits on another network for that asset.
+
+What actually happened: the funds arrived on a network the recipient exchange did not credit automatically. Recovery depends on the exchange and may be slow, expensive, or impossible.
+
+Warning signs:
+
+- The sender checked only the token name, not the network.
+- The recipient did not confirm the exact deposit network.
+- The fee was chosen before confirming compatibility.
+
+Better response: always confirm asset, network, and recipient address together. For first-time transfers, send a small test amount.
+
+## X / Twitter-Specific Scam Patterns
+
+X is one of the main information channels for Web3, which also makes it one of the main attack surfaces. The scams below are especially common there.
+
+### 1. Fake Verified Accounts in the Replies
+
+A real project posts an announcement. Within seconds, lookalike accounts appear in the replies with the same avatar, similar display name, and sometimes a paid verification badge.
+
+Typical message:
+
+> "Claim is live now. Use the official link below."
+
+Why it works: users often read replies faster than they check domains.
+
+Defense:
+
+- Do not trust links in replies.
+- Click through to the project's official profile and website.
+- Check the handle, not just the display name or badge.
+
+### 2. Hacked Official Accounts
+
+Sometimes the scam does not come from a fake account. A real founder, influencer, or project account gets compromised and posts a malicious mint, airdrop, or token link.
+
+Why it works: the account is genuinely trusted, so normal "check the profile" habits are not enough.
+
+Defense:
+
+- Treat sudden urgent claims from any account as suspicious.
+- Cross-check with the project's website, Discord, GitHub, or multiple team members.
+- Be extra careful if the post asks for a fast signature or wallet connection.
+
+### 3. Fake Airdrop Threads
+
+Scammers write long, polished threads explaining that a major project has launched a surprise airdrop. The thread includes screenshots, fake eligibility rules, and a claim link.
+
+Warning signs:
+
+- The project itself has not announced it on official channels.
+- The thread uses urgency: "first 10,000 wallets only."
+- The claim requires a message signature, `permit`, or approval.
+
+Defense: never claim from a thread link alone. Start from the official project website or docs.
+
+### 4. Quote-Tweet Contract Address Traps
+
+A real token launch or project announcement gets quote-tweeted by scammers who include a fake contract address.
+
+Typical message:
+
+> "Official CA: 0x...."
+
+Why it works: users want to buy early and copy the first contract address they see.
+
+Defense:
+
+- Never copy contract addresses from random replies or quote tweets.
+- Use the project website, official docs, block explorer verified pages, CoinGecko, or CoinMarketCap.
+- For new launches, wait until multiple official channels confirm the address.
+
+### 5. Fake Support Under Complaint Posts
+
+You post: "My wallet is stuck" or "I cannot claim." Bots and fake support accounts reply or DM immediately.
+
+Typical message:
+
+> "We can help. Validate your wallet here."
+
+What happens next: the "validation" page asks for a seed phrase, private key, or malicious signature.
+
+Defense:
+
+- Do not ask for wallet help in public unless you are ready for scam DMs.
+- Disable DMs from unknown accounts if needed.
+- Real support never needs your seed phrase.
+
+### 6. Fake Whitelist or Allowlist Spots
+
+An account says you won a whitelist spot for a mint, private sale, or early access round. It asks you to connect a wallet and sign quickly.
+
+Warning signs:
+
+- You did not participate in anything.
+- The account pressures you with a countdown.
+- The mint page is not linked from the official project site.
+
+Defense: whitelist wins should be verifiable through official channels. If you cannot verify it independently, ignore it.
+
+### 7. "Security Alert: Revoke Now" Links
+
+Scammers post fake warnings that a protocol has been hacked and tell users to revoke approvals through a link.
+
+Why it works: fear is as powerful as greed. Users rush to "protect" assets and sign on a malicious page.
+
+Defense:
+
+- If you need to revoke approvals, type the trusted approval tool's domain yourself or use a bookmark.
+- Never use an emergency link from a random post.
+- Verify the incident from multiple reliable sources.
+
+### 8. Fake Livestreams, Spaces, and Giveaways
+
+Scammers run fake livestreams or Spaces using project branding, founder names, or AI-generated voices. They promote "send 1 ETH, receive 2 ETH" giveaways or claim links.
+
+Defense:
+
+- No legitimate project doubles your money for sending funds.
+- Treat giveaway links in Spaces, livestream chats, and reposts as hostile by default.
+- Verify from the official website, not the live chat.
+
 ## Web3 Self-Defense Checklist
 
 ### Never Do
