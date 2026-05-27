@@ -88,7 +88,7 @@ witch collapse practice feed shame open despair creek road again ice least
 
 ### 钱包（Wallet）
 
-钱包 App（MetaMask、Phantom、Rabby、imToken、OKX Wallet 等）做的事是：
+钱包 App（MetaMask、Blofin Wallet、Phantom、Rabby、imToken、OKX Wallet 等）做的事是：
 
 1. 帮你生成助记词和私钥
 2. 把私钥加密存在你的设备里

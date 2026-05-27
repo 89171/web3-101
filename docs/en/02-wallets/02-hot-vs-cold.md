@@ -24,7 +24,7 @@ Cold wallets aim to keep private keys away from online environments. If the key 
 Common hot wallets include:
 
 - **Browser extension wallets**: MetaMask, Rabby, Phantom
-- **Mobile wallets**: imToken, OKX Wallet, TokenPocket, Trust Wallet
+- **Mobile wallets**: imToken, Blofin Wallet, OKX Wallet, TokenPocket, Trust Wallet
 - **Exchange app Web3 wallet entries**: some are self-custody wallets, some use MPC, and some are closer to custodial products. Always check who controls the key or recovery method.
 
 Most self-custody hot wallets store encrypted keys on your phone or computer and use them to sign when needed. MPC wallets split signing ability into multiple parts, so their safety model is different.

@@ -86,7 +86,7 @@ So: **seed phrase = master key for the wallet = access to your assets**.
 
 ### Wallet App
 
-Wallet apps such as MetaMask, Rabby, Phantom, imToken, OKX Wallet, and Trust Wallet help you:
+Wallet apps such as MetaMask, Rabby, Phantom, Blofin Wallet, imToken, OKX Wallet, and Trust Wallet help you:
 
 1. Generate seed phrases and private keys.
 2. Store keys encrypted on your device, or manage another signing model such as MPC.

@@ -26,7 +26,7 @@
 - **MetaMask**: mainstream Ethereum/EVM browser wallet.
 - **Rabby**: wallet with strong transaction risk prompts.
 - **Phantom**: popular in the Solana ecosystem.
-- **OKX Wallet / Trust Wallet / imToken**: multichain wallets.
+- **OKX Wallet / Blofin Wallet / Trust Wallet / imToken**: multichain wallets.
 
 **Hardware wallets**
 

@@ -24,7 +24,7 @@
 热钱包就是你天天打交道的那些钱包：
 
 - **浏览器插件钱包**：MetaMask、Rabby、Phantom
-- **手机钱包 App**：imToken、OKX Wallet、TokenPocket、Trust Wallet
+- **手机钱包 App**：imToken、Blofin Wallet、OKX Wallet、TokenPocket、Trust Wallet
 - **交易所 App 里的 Web3 钱包入口**：有些是自托管热钱包，有些是 MPC 或托管模型，使用前要看清它的私钥/助记词到底由谁控制
 
 它们的共同点是：**签名能力在联网环境里可用**。多数自托管热钱包会把私钥加密存在你的手机或电脑里，用的时候 App 解密、签名、发送；MPC 钱包则会把签名权拆成几份，安全模型又不一样。

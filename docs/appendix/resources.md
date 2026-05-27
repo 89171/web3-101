@@ -29,7 +29,7 @@
 - **MetaMask** —— 最主流的以太坊系浏览器插件钱包
 - **Rabby** —— 比 MetaMask 安全提示更好的钱包（开源）
 - **Phantom** —— Solana 生态最常用
-- **OKX Wallet / Trust Wallet / imToken** —— 多链支持的手机钱包
+- **OKX Wallet / Blofin Wallet / Trust Wallet / imToken** —— 多链支持的手机钱包
 
 **硬件钱包**：
 - **Ledger**（法国）
